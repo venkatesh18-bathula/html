@@ -17,7 +17,10 @@ jobs:
         run: ls -la
 
       - name: Check HTML file
-        run: test -f indexxx.html
+        run: test -f index.html
+
+      - name: check tag h1
+        run:grep -q "<h1/>" index.html 
 
       - name: Check CSS file
         run: test -f index.css
