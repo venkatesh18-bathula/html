@@ -17,7 +17,7 @@ jobs:
         run: ls -la
 
       - name: Check HTML file
-        run: test -f index.html
+        run: test -f indexxx.html
 
       - name: Check CSS file
         run: test -f index.css
