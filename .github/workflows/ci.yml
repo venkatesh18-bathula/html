@@ -1,0 +1,29 @@
+name: My First CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Show project files
+        run: ls -la
+
+      - name: Check HTML file
+        run: test -f index.html
+
+      - name: Check CSS file
+        run: test -f index.css
+
+      - name: Check text file
+        run: test -f codee.txt
+
+      - name: Tests passed
+        run: echo "All tests passed!"
