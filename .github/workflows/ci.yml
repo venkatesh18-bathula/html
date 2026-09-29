@@ -19,8 +19,8 @@ jobs:
       - name: Check HTML file
         run: test -f index.html
 
-      - name: check tag h1
-        run: grep -q "<h1>" index.html 
+      - name: check text
+        run: grep -q "how are you" index.html 
 
       - name: Check CSS file
         run: test -f index.css
